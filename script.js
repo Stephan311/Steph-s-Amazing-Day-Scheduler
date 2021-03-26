@@ -16,9 +16,10 @@ var hour = date.getHours();
 function presentTime() {
     // time might need to point to your time blocks - (done)
     var time = $(".textarea")
-    var myHour = timeBlock.attr('id').split('t')[0]
-    console.log(myHour)
-    for (time = 15; time < 24; time ++) {
+    //var hour = 13;
+    console.log(hour);
+    for (time = 9; time < 18; time ++) {
+        // debugger;
         // for each of your time block
         // I want to see if the time is pas t, present etc
         // use the id in each time-block
@@ -26,15 +27,15 @@ function presentTime() {
         //different classes get applied to the time blocks depending on the time
    
         if(time === hour) {
-            $(".textarea").addClass("present") 
+            $(".textarea" + time).addClass("present") 
             console.log("present");
             console.log(time);
         } else if (time < hour) {
-            $(".textarea").addClass("past")
+            $(".textarea" + time).addClass("past")
             console.log("past");
             console.log(time);  
         } else {
-            $(".textarea").addClass("future")
+            $(".textarea" + time).addClass("future")
             console.log("future");
             console.log(time);
         }
