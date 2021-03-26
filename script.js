@@ -13,7 +13,15 @@ var findTime = function() {
     var localTime = moment().format('H');
 
     //select the column elements
-    var timeBlockEL = $("textarea")
+    var timeBlockEL = $(".textarea")
+
+    //loop through text area
+    for (var i = 0; i < timeBlockEL.length ; i++) {
+        var BlockID = timeBlockEL[i].id;
+        var Elid = document.getElementById(timeBlockEL[i].id)
+
+        
+    }
 }
 
 
