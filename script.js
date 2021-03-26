@@ -5,12 +5,33 @@ var timeArea = document.querySelector(".time-block > textarea")
 console.log("hi"); 
 
 
-//display time
-$("#today").text(moment().format('MMM Do, YYYY; h:mm a'));
+//get time
 
-var currentHour = new Date();
-var hour = currentHour.getHours();
-if (hour >= 0 &&)
+var findTime = function() {
+
+    //gets current local time using moment
+    var localTime = moment().format('H');
+
+    //select the column elements
+    var timeBlockEL = $("textarea")
+}
+
+
+
+// //display time
+// $("#today").text(moment().format('MMM Do, YYYY; h:mm a'));
+
+// var currentHour = new Date();
+// var hour = currentHour.getHours();
+// if (hour >= 9 && hour <= 17) {
+//     $(".row").addClass("present")
+
+// } else if (hours > 9){
+//     $(".row").addClass("past") 
+
+// } else {
+//     $(".row").addClass("future")
+// }
 
 // //color gets changed depending on time, this accesses the time 
 // var date = new Date();
