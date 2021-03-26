@@ -18,18 +18,25 @@ function presentTime() {
     var time = $(".textarea")
     var myHour = timeBlock.attr('id').split('t')[0]
     console.log(myHour)
-    for (time = 9; time < 18; time ++) {
+    for (time = 15; time < 24; time ++) {
         // for each of your time block
         // I want to see if the time is pas t, present etc
         // use the id in each time-block
 
         //different classes get applied to the time blocks depending on the time
+   
         if(time === hour) {
             $(".textarea").addClass("present") 
+            console.log("present");
+            console.log(time);
         } else if (time < hour) {
             $(".textarea").addClass("past")
+            console.log("past");
+            console.log(time);  
         } else {
             $(".textarea").addClass("future")
+            console.log("future");
+            console.log(time);
         }
 
         //gets time out of local storage so it can display on screen
@@ -55,16 +62,23 @@ var test = localStorage.setItem("textarea", 1);
 
 console.log(test);
 
+console.log("hi");
+
 //save inputs to local storage
 
-var test1 = $(".saveBtn").on("click", saveTask);
+// var click = $(".saveBtn");
+// click.on('click', addTask);
 
-function saveTask() {
-    var task = $(".saveBtn").value;
+
+
+// var test1 = $(".saveBtn").on("click", saveTask);
+
+// function saveTask() {
+//     var task = $(".saveBtn").value;
     
-    console.log('added', task);
+//     console.log('added', task);
 
-}
+// }
 
 
 
