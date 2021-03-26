@@ -1,3 +1,4 @@
+
 var timeDisplayEL = $("#time-display");
 var timeBlock = $(".time-block")
 var timeArea = document.querySelector(".time-block > textarea")
@@ -49,9 +50,23 @@ presentTime()
 
 // $(".saveBtn").on("click", userInput)
 
+
 var test = localStorage.setItem("textarea", 1);
 
 console.log(test);
+
+//save inputs to local storage
+
+var test1 = $(".saveBtn").on("click", saveTask);
+
+function saveTask() {
+    var task = $(".saveBtn").value;
+    
+    console.log('added', task);
+
+}
+
+
 
 
 
