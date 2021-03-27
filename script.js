@@ -40,46 +40,41 @@ function presentTime() {
             console.log(time);
         }
 
-        //gets time out of local storage so it can display on screen
-        $("#" + time).val(localStorage.getItem("" + time));
+        //localStorage.getItem(storage).text(storage)
+        //console.log("localstorage")
+        //console.log(localStorage.getItem(storage))
+
+        // //gets time out of local storage so it can display on screen
+        // $("#" + time).val(localStorage.getItem("" + time));
     }
 }
 
 presentTime()
 
-//input gets saved to the list when the save button is pressed
 
-// function userInput(event) {
-//     var taskInput = $(this).siblings("textarea").val().trim();
-//     var hoursV = $(this).siblings("textarea").attr("id");
+//var test = localStorage.setItem("textarea", 1);
 
-//     localStorage.setItem(hoursV, taskInput);
-// }
-
-// $(".saveBtn").on("click", userInput)
-
-
-var test = localStorage.setItem("textarea", 1);
-
-console.log(test);
+//console.log(test);
 
 console.log("hi");
 
 //save inputs to local storage
 
-// var click = $(".saveBtn");
-// click.on('click', addTask);
+var storage = $(".textarea9")
 
-
-
-// var test1 = $(".saveBtn").on("click", saveTask);
-
-// function saveTask() {
-//     var task = $(".saveBtn").value;
+function saveData() {
+    debugger; 
+    window.localStorage.setItem(storage, $(".textarea9"))
     
-//     console.log('added', task);
+    console.log(storage)
+}
 
-// }
+
+
+
+
+
+
 
 
 
