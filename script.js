@@ -75,6 +75,8 @@ presentTime()
 // console.log(taskRead);
 // TaskDiv.textContent = taskRead;
 
+//functions to store answers
+
 function storeFunction() {
     console.log("saveBtnCalled");
     var taskWrite = document.querySelector(".textarea9").value;
