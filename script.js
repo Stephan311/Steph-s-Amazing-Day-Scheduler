@@ -62,11 +62,27 @@ console.log("hi");
 
 var storage = $(".textarea9")
 
-function saveData() {
-    debugger; 
-    window.localStorage.setItem(storage, $(".textarea9"))
+// function saveData() {
+//     // debugger; 
+//     window.localStorage.setItem(storage, $(".textarea9"))
     
-    console.log(storage)
+//     console.log(storage)
+// }
+
+
+function saveData() {
+
+$(document).ready (function () {
+    $(".description").each(function () {
+        $(this).val(localStorage.getItem("item-" + $(this).attr(".description") ))
+    });
+
+    $(".description").on("keyup", function (itm) {
+        localStorage.setItem ("item-" + $(this).attr("textarea"), $(this).val());
+    })
+
+})
+
 }
 
 
