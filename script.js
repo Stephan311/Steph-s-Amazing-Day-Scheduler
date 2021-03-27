@@ -1,4 +1,5 @@
 
+
 var timeDisplayEL = $("#time-display");
 var timeBlock = $(".time-block")
 var timeArea = document.querySelector(".time-block > textarea")
@@ -8,7 +9,7 @@ console.log("hi");
 
 
 // //display time
- $("#today").text(moment().format('MMM Do, YYYY; h:mm a'));
+ $("#today").text(moment().format('MMM Do, YYYY'));
 
 //color gets changed depending on time, this accesses the time 
 var date = new Date();
@@ -40,6 +41,11 @@ function presentTime() {
             console.log(time);
         }
 
+        var taskRead = localStorage.getItem("textarea" + time);
+        var TaskDiv = document.querySelector(".textarea" + time)
+        console.log(taskRead);
+        TaskDiv.textContent = taskRead;
+        
         //localStorage.getItem(storage).text(storage)
         //console.log("localstorage")
         //console.log(localStorage.getItem(storage))
@@ -51,39 +57,112 @@ function presentTime() {
 
 presentTime()
 
+//GIVE IT A KEY OF SOME SOrt, the slot iteself
+//give it the value of the element, just not the jquery of the element,
+//find out how to store them uniquley
+//ability to get history, by key, set up a function where history can be saved
+//build something arounf your history as if we have objects
+//get history, set a key
+//once getHistory and setHistory is figured out
 
-//var test = localStorage.setItem("textarea", 1);
+//array that grabs all of the inputs
 
-//console.log(test);
-
-console.log("hi");
-
-//save inputs to local storage
-
-var storage = $(".textarea9")
-
-// function saveData() {
-//     // debugger; 
-//     window.localStorage.setItem(storage, $(".textarea9"))
-    
-//     console.log(storage)
-// }
+// $(".saveBtn").on("click", storeFunction());
 
 
-function saveData() {
+// var taskRead = localStorage.getItem("textarea9");
+// var TaskDiv = document.querySelector(".textarea9")
+// console.log(taskRead);
+// TaskDiv.textContent = taskRead;
 
-$(document).ready (function () {
-    $(".description").each(function () {
-        $(this).val(localStorage.getItem("item-" + $(this).attr(".description") ))
-    });
+function storeFunction() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea9").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea9", taskWrite );
 
-    $(".description").on("keyup", function (itm) {
-        localStorage.setItem ("item-" + $(this).attr("textarea"), $(this).val());
-    })
-
-})
 
 }
+
+function storeFunction1() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea10").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea10", taskWrite );
+
+
+}
+
+function storeFunction2() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea11").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea11", taskWrite );
+
+
+}
+
+function storeFunction3() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea12").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea12", taskWrite );
+
+
+}
+
+function storeFunction4() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea13").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea13", taskWrite );
+
+
+}
+
+function storeFunction5() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea14").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea14", taskWrite );
+
+
+}
+
+function storeFunction6() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea15").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea15", taskWrite );
+
+
+}
+
+function storeFunction7() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea16").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea16", taskWrite );
+
+
+}
+
+function storeFunction8() {
+    console.log("saveBtnCalled");
+    var taskWrite = document.querySelector(".textarea17").value;
+    console.log(taskWrite);
+    localStorage.setItem("textarea17", taskWrite );
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
