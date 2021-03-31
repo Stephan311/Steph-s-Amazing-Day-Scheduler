@@ -6,6 +6,7 @@ Link to Repo: https://github.com/Stephan311/Steph-s-Amazing-Day-Scheduler
 
 Link to Application: https://stephan311.github.io/Steph-s-Amazing-Day-Scheduler/ 
 
-Screenshot:
+Screenshot: ![llllllllllllllllllllllllllllllllllllllllll](https://user-images.githubusercontent.com/76667667/113077647-87da7280-919f-11eb-915f-c01b8e63136b.JPG)
+
 
 
