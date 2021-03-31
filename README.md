@@ -4,4 +4,8 @@ In this day scheduler, I planned on making an app that was easy to use for sched
 
 Link to Repo: https://github.com/Stephan311/Steph-s-Amazing-Day-Scheduler
 
-Link to Application:
+Link to Application: https://stephan311.github.io/Steph-s-Amazing-Day-Scheduler/ 
+
+Screenshot:
+
+
